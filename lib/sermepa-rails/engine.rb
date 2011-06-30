@@ -1,5 +1,7 @@
-module SermepaRails
-  class Engine < Rails::Engine
+module Sermepa
+  module Rails
+    class Engine < ::Rails::Engine
+    end
   end
 end
 

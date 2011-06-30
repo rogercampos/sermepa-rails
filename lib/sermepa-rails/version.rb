@@ -1,3 +1,5 @@
-module SermepaRails
-  VERSION = "0.1.0"
+module Sermepa
+  module Rails
+    VERSION = "0.1.0"
+  end
 end

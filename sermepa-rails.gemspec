@@ -4,13 +4,13 @@ require "sermepa-rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "sermepa-rails"
-  s.version     = SermepaRails::VERSION
+  s.version     = Sermepa::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Roger Campos"]
   s.email       = ["roger@itnig.net"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/rogercampos/sermepa-rails"
+  s.summary     = %q{spanish sermepa TPV implementation}
+  s.description = %q{spanish sermepa TPV implementation}
 
   s.rubyforge_project = "sermepa-rails"
 

@@ -1,0 +1,24 @@
+<%= form_tag Sermepa::Rails.api_url do %>
+  <%= hidden_field_tag "Ds_Merchant_Amount", transaction.amount %>
+  <%= hidden_field_tag "Ds_Merchant_Currency", transaction.currency %>
+  <%= hidden_field_tag "Ds_Merchant_Order", transaction.order %>
+  <%= hidden_field_tag "Ds_Merchant_ProductDescription", transaction.concept %>
+  <%= hidden_field_tag "Ds_Merchant_Titular", transaction.titular %>
+  <%= hidden_field_tag "Ds_Merchant_MerchantCode", transaction.fuc %>
+  <%= hidden_field_tag "Ds_Merchant_MerchantURL", transaction.notify_url %>
+  <%= hidden_field_tag "Ds_Merchant_MerchantSignature", transaction.signature %>
+  <%= hidden_field_tag "Ds_Merchant_Terminal", transaction.term_number %>
+  <%= hidden_field_tag "Ds_Merchant_TransactionType", transaction.transaction_type %>
+  <%= hidden_field_tag "Ds_Merchant_MerchantData", transaction.extra_data if transaction.extra_data %>
+  <%= hidden_field_tag "Ds_Merchant_UrlOK", transaction.url_ok if transaction.url_ok %>
+  <%= hidden_field_tag "Ds_Merchant_UrlKO", transaction.url_error if transaction.url_error %>
+  <%= hidden_field_tag "Ds_Merchant_MerchantName", transaction.merchant_name if transaction.merchant_name %>
+  <%= hidden_field_tag "Ds_Merchant_ConsumerLanguage", transaction.language if transaction.language %>
+  <%= hidden_field_tag "Ds_Merchant_PayMethods", transaction.pay_methods if transaction.pay_methods %>
+  <%= hidden_field_tag "Ds_Merchant_DateFrecuency", transaction.date_frequency if transaction.date_frequency %>
+  <%= hidden_field_tag "Ds_Merchant_ChargeExpiryDate", transaction.charge_expiry_date if transaction.charge_expiry_date %>
+  <%= hidden_field_tag "Ds_Merchant_SumTotal", transaction.sum_total if transaction.sum_total %>
+
+  <%= submit_tag "Pay" %>
+<% end %>
+
